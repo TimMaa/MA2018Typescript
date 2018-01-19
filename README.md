@@ -32,4 +32,5 @@ tooling issues.
 
 ## References
 
-[Microsoft takes the wraps off TypeScript (2012)](http://www.zdnet.com/article/microsoft-takes-the-wraps-off-typescript-a-superset-of-javascript/)
+[Microsoft takes the wraps off TypeScript (2012)](http://www.zdnet.com/article/microsoft-takes-the-wraps-off-typescript-a-superset-of-javascript/)  
+[TypeScript in 5 minutes](http://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)

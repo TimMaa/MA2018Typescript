@@ -5,8 +5,27 @@
     <title>Awesome Typescript</title>
     <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
-    <div>Text</div>
+    <div>
+        <input id="input-username" placeholder="Enter Your Name">
+    </div>
+    <div>
+        <button onclick="greet()">Say Hello</button>
+        <button onclick="greetWarningWrongType1()">Works but type violation in TS</button>
+        <button onclick="greetWarningWrongType2()">Works but type violation in TS</button>
+    </div>
+    <div id="greeting"></div>
+
+    <div>
+        <input id="input-student-firstname" placeholder="Enter Student first name">
+        <input id="input-student-lastname" placeholder="Enter Student last name">
+        <input id="input-student-age" placeholder="Enter Student age">
+    </div>
+    <div>
+        <button onclick="displayStudent()">Generate Student</button>
+    </div>
+    <div id="student-info"></div>
 </body>
 </html>
