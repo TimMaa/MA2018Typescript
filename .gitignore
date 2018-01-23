@@ -1,5 +1,8 @@
-# Ignore all WebStorm-Files
+# WebStorm-Files
 .idea/
 /*.iml
 *iml
 *iws
+
+# Node Modules
+/node_modules

@@ -20,23 +20,25 @@ function greet() {
     document.getElementById('greeting').innerHTML = generateGreeting(input.value);
 }
 function greetWarningWrongType1() {
-    // The following line shows a warning, because the value which is assigned to the input variable
-    // is not necessarily a HTMLInputElement
+    // The following line is a violation of the type and shows a warning
+    // the value which is assigned to the input variable is not necessarily a HTMLInputElement and therefore may be wrong
+    // and cause issues on runtime. TypeScript warns against this.
     var input = document.getElementById('input-username');
     // This will work anyway, because after compiling to js the types do not matter
     document.getElementById('greeting').innerHTML = generateGreeting(input.value);
 }
 function greetWarningWrongType2() {
     var stringArray = ["1", "2", "3"];
-    // The following line shows a warning, because the function generateGreeting cannot be called with a
-    // string-Array because it expects a string
+    // The following line is a violation of the type and shows a warning
+    // the value which is given to the generateGreeting function is not a String and therefore may be wrong
+    // and cause issues on runtime. TypeScript warns against this.
     document.getElementById('greeting').innerHTML = generateGreeting(stringArray);
 }
 function displayStudent() {
     // Get all the values from the InputElements
     var iFName = document.getElementById('input-student-firstname').value;
     var iLName = document.getElementById('input-student-lastname').value;
-    var iAge = document.getElementById('input-student-age').value;
+    var iAge = Number(document.getElementById('input-student-age').value);
     // Generate a student with the values from the InputElements by using the generateStudent-Method
     var nStudent = generateStudent(iFName, iLName, iAge);
     // Write the student information in the correct field
